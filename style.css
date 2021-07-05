@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+ 
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Karla, sans-serif ;
+  color: var(--grey);
+}
+
+:root{
+--cyan:hsl(179, 62%, 43%);
+--cyan2:hsl(179, 51%, 57%);
+--yelow: hsl(71, 73%, 54%);
+--grey:hsl(204, 43%, 93%);
+--blue:hsl(218, 22%, 67%);
+--blue2:hsl(217, 46%, 75%);
+}
+
+.main{
+    background-color:var(--grey);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.container{
+    width: 80%;
+    height: 80%;
+ border-radius: 5px;
+    background-color: white;
+    box-shadow: violet;
+    box-shadow: 10px 0px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.community{
+    width: 100%;
+    height: 35%;
+  
+  
+
+}
+.community .content{
+   
+    padding-left: 0.5rem;
+}
+
+.community .content h1{
+    color: var(--cyan);
+    font-size: 16px;
+    margin: 1rem 0;
+}
+.community .content #p1{
+    color: var(--yelow);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.community .content #p2{
+    color:var(--blue);
+    font-size: 13px;
+    line-height: 1.5rem;
+}
+.single{
+    width: 100%;
+    height: 65%;
+ 
+}
+.price{
+    width: 100%;
+    height: 50%;
+    border: 2px solid var(--cyan);
+    background-color: var(--cyan);
+} 
+
+.price .content{
+    padding-left: 1rem;
+}
+.price .content h1{
+    font-size: 16px;
+    margin: 1rem 0;
+ 
+}
+.price .content #p1 span{
+    font-weight: 700;
+    font-size: 25px;
+color: var(--grey);
+}
+.price .content #p1{
+    margin-bottom: 0.6rem;
+    font-size: 13px;
+    color: var(--blue2);
+}
+.price .content #p2{
+   font-size: 13px;
+   color: var(--blue2);
+}
+.price .content .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    margin-top: 1rem;
+}
+.price .content .button button{
+    padding: 0.6rem 6rem;
+    color: white;
+    background-color: var(--yelow);
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.price .content .button button:hover{
+    background-color: white;
+   color: var(--yelow);
+   transition: all 0.6s ease;
+}
+
+.why{
+    width: 100%;
+    height: 45%;
+    border: 2px solid var(--cyan2);
+    background-color: var(--cyan2);
+    border-radius: 0 0 5px 5px;
+}
+.why .content{
+    padding-left: 1rem;
+}
+.why .content h1{
+
+    font-size: 16px;
+    margin: 0.4rem 0;
+
+}
+.why .content p{
+    font-size: 13px;
+    padding-right: 6rem;
+    line-height: 1.3rem;
+    color: var(--grey);
+}
+
+@media screen and (min-width:500px){
+    .community .content h1{
+        font-size: 2rem;
+    }
+    .community .content #p1{
+        font-size: 1.2rem;
+    }
+    .community .content #p2{
+font-size: 1.2rem;
+    }
+    .price .content h1{
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
+    }
+    .price .content #p1{
+        font-size: 1.5rem;
+    }
+    .price .content #p1 span{
+        font-size: 1.8rem;
+    }
+    .price .content #p2{
+        font-size: 1rem;
+        margin-bottom: -0.5rem;
+    }
+    .why .content h1{
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
+    }
+    .why .content p{
+        font-size: 1.2rem;
+        padding-right: 6rem;
+        line-height: 1.3rem;
+        padding-right: 0pc;
+      
+    }
+    .why .content{
+        border-radius: 0px 0px 5px 110px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .container{
+        width: 680px;
+        height: 491px;
+      
+    }
+    
+    .single{
+     display: flex;
+     height: 60%;
+    
+    }
+
+    .community{
+        width: 100%;
+        height: 40%;
+ 
+        padding:0  2rem;
+    }
+    .community .content #p2{
+        font-size: 1.2rem;
+    }
+    .community .content #p2{
+        line-height: 2rem;
+    }
+    .price{
+        width: 100%;
+        height: 95%;
+        border: 2px solid var(--cyan);
+        border-radius: 0 0 0 5px;
+    } 
+    .price .content{
+        padding: 1rem;
+        font-size: 1.5rem;
+       
+    }
+    .price .content .button{
+        margin-top: 3rem;
+    }
+    .price .content h1{
+        font-size: 1.6rem;
+    }
+    .price .content #p1,#p2{
+        font-size: 1rem;
+        margin-top: 1.3 rem;
+    }
+    .why{
+        width: 100%;
+        height: 95%;
+        border: 2px solid var(--cyan2);
+       
+        border-radius: 0px 0px 5px 0;
+    }
+    .why .content{
+        padding-top: 1rem;
+        padding-left: 1rem;
+     
+          
+        
+    }
+    .why .content h1{
+        font-size: 1.6rem;
+    }
+    .why .content p{
+        font-size: 1rem;
+        padding-right: 6rem;
+        line-height: 2rem;
+        padding-right: 5rem;
+    }
+}
